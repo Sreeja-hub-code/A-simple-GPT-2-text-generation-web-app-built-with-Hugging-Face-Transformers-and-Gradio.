@@ -1,9 +1,3 @@
-Got it 👍
-Below is the **FULL, FINAL, DIRECT COPY-PASTE `README.md`**.
-Just **copy everything exactly as it is** and paste into your GitHub `README.md`.
-
----
-
 ````markdown
 # GPT-2 Text Generation Web Application
 
