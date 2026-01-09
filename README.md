@@ -1,131 +1,97 @@
-````markdown
 # GPT-2 Text Generation Web Application
 
-## Overview
-This project is a web-based text generation application built using the GPT-2 language model from Hugging Face.  
-It allows users to enter a text prompt and generate coherent, human-like text through an interactive web interface powered by Gradio.
+An interactive web application for generating human-like text using a **pre-trained GPT-2 Transformer model**.  
+This project demonstrates the practical application of modern **Natural Language Processing (NLP)** techniques without training a model from scratch.
 
-The project demonstrates the practical application of pre-trained Transformer models for Natural Language Processing (NLP) tasks without training a model from scratch.
+---
+
+## 🚀 Project Overview
+The GPT-2 Text Generation Web Application enables users to provide a text prompt and generate coherent text through a clean and intuitive web interface.  
+The application leverages **transfer learning** by using a pre-trained language model, making advanced NLP accessible and efficient.
 
 ---
 
 ## Key Features
-- Pre-trained GPT-2 text generation model
-- Interactive web interface using Gradio
-- Adjustable text generation parameters:
-  - Maximum New Tokens
-  - Temperature (controls creativity)
-- Automatic detection of CPU or GPU
-- Public shareable demo link
+- Pre-trained GPT-2 language model from Hugging Face  
+- Interactive and responsive web UI built with Gradio  
+- Customizable text generation parameters:
+  - **Max New Tokens** – controls output length  
+  - **Temperature** – controls creativity and randomness  
+- Automatic detection of CPU or GPU runtime  
+- Shareable public web interface  
 
 ---
 
-## Technologies Used
-- Python
-- PyTorch
-- Hugging Face Transformers
-- Gradio
-- Google Colab
+## Tech Stack
+- **Programming Language:** Python  
+- **Deep Learning Framework:** PyTorch  
+- **NLP Library:** Hugging Face Transformers  
+- **Web Interface:** Gradio  
+- **Development Environment:** Google Colab  
 
 ---
 
 ## System Architecture
-1. User provides a text prompt through the UI  
-2. GPT-2 tokenizer converts text into tokens  
-3. GPT-2 model generates new tokens using sampling  
-4. Tokens are decoded back into readable text  
-5. Generated text is displayed to the user  
+1. User inputs a text prompt through the web interface  
+2. Text is tokenized using the GPT-2 tokenizer  
+3. The GPT-2 model generates new tokens using probabilistic sampling  
+4. Generated tokens are decoded into readable text  
+5. Output is displayed to the user in real time  
 
 ---
 
-## Installation
-Install the required dependencies using pip:
-
+## ⚙️ Installation
+Clone the repository and install dependencies:
 ```bash
-pip install gradio transformers torch
-````
+pip install -r requirements.txt
+▶️ Running the Application
 
----
+Execute the application locally:
 
-## Usage
+python app.py
 
-Run the application in Python or Google Colab:
 
-```python
-demo.launch(share=True)
-```
+For Google Colab or remote execution:
 
-This starts the Gradio server and generates a public URL for accessing the application.
+interface.launch(share=True)
 
----
-
-## Example
-
-### Input Prompt
-
-```
+🧪 Sample Usage
+Input Prompt
 Once upon a time in a small village
-```
 
-### Sample Output
-
-```
+Generated Output
 Once upon a time in a small village, there lived a young boy who dreamed of adventure...
-```
 
-(Output may vary based on parameter settings.)
 
----
+Results may vary depending on temperature and token settings.
 
-## Parameter Description
+⚠️ Limitations
 
-* **Max New Tokens**: Determines the length of the generated text
-* **Temperature**:
+Generated content may be biased or factually incorrect
 
-  * Low value → more predictable output
-  * High value → more creative output
+Output quality depends on prompt design
 
----
+Not suitable for critical or sensitive applications
 
-## Deployment
+🔮 Future Enhancements
 
-For permanent hosting, deploy the application using Hugging Face Spaces:
+Deployment on Hugging Face Spaces with GPU support
 
-```bash
-gradio deploy
-```
+Text history and export functionality
 
----
+Integration of larger and more advanced language models
 
-## Limitations
+UI performance and design improvements
 
-* GPT-2 may generate biased, incorrect, or incomplete content
-* Output quality depends heavily on the input prompt
-* Not suitable for sensitive or factual-critical applications
-
----
-
-## Future Enhancements
-
-* Deploy on Hugging Face Spaces with GPU support
-* Add text download and history tracking
-* Upgrade to larger language models
-* Improve UI design and performance
-
----
-
-## License
+📜 License
 
 This project is developed strictly for educational and learning purposes.
 
----
+👩‍💻 Author
 
-## Author
+Sreeja
+BSc Artificial Intelligence & Machine Learning
+Academic Mini Project
 
-SREEJA
-GPT-2 Text Generation using Transformers and Gradio
 
-```
-
----
 
