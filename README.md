@@ -122,18 +122,10 @@ This project is developed strictly for educational and learning purposes.
 
 ## Author
 
-Student Project
+SREEJA
 GPT-2 Text Generation using Transformers and Gradio
 
 ```
 
 ---
 
-If you want:
-- 🧾 **project report**
-- 🎓 **college submission format**
-- 🚀 **Hugging Face Spaces README**
-- 🧠 **theory explanation section**
-
-Just say the word 👍
-```
